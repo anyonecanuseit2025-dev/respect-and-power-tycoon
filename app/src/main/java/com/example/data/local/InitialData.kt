@@ -1,0 +1,663 @@
+package com.example.data.local
+
+object InitialData {
+    fun defaultBusinesses(): List<BusinessEntity> = listOf(
+        BusinessEntity(
+            id = "corner_bodega",
+            name = "Sunny Lemonade & Cookie Stand",
+            category = "Sweet Treats",
+            level = 1,
+            baseCost = 50.0,
+            costMultiplier = 1.12,
+            baseRevenuePerSec = 5.0,
+            baseRespectPerSec = 1.0,
+            basePowerPerSec = 0.5,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Chef Cookie & Pip",
+            managerCost = 250.0,
+            iconName = "storefront",
+            description = "A colorful roadside stand serving fresh lemonade and chocolate chip cookies!"
+        ),
+        BusinessEntity(
+            id = "neon_lounge",
+            name = "Rainbow Ice Cream & Candy Castle",
+            category = "Candy Delights",
+            level = 0,
+            baseCost = 350.0,
+            costMultiplier = 1.15,
+            baseRevenuePerSec = 28.0,
+            baseRespectPerSec = 4.0,
+            basePowerPerSec = 2.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Princess Sparkle",
+            managerCost = 1500.0,
+            iconName = "nightlife",
+            description = "Swirls of magical cotton candy, rainbow sundaes, and singing bubblegum fountains!"
+        ),
+        BusinessEntity(
+            id = "underground_pit",
+            name = "Turbo Bumper Cars & Fun Arcade",
+            category = "Action Play",
+            level = 0,
+            baseCost = 2000.0,
+            costMultiplier = 1.18,
+            baseRevenuePerSec = 120.0,
+            baseRespectPerSec = 15.0,
+            basePowerPerSec = 10.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Captain Zoom",
+            managerCost = 7500.0,
+            iconName = "sports_kabaddi",
+            description = "Exciting bumper car tracks, dance machines, and prize claw machines full of teddy bears!"
+        ),
+        BusinessEntity(
+            id = "armory_depot",
+            name = "Super Hero Toy Workshop",
+            category = "Toy Innovation",
+            level = 0,
+            baseCost = 10000.0,
+            costMultiplier = 1.20,
+            baseRevenuePerSec = 480.0,
+            baseRespectPerSec = 45.0,
+            basePowerPerSec = 40.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Robo-Buddy 3000",
+            managerCost = 35000.0,
+            iconName = "security",
+            description = "Crafting superhero capes, glowing gadgets, and robotic dinosaur toys for the squad."
+        ),
+        BusinessEntity(
+            id = "cyber_grid",
+            name = "Cosmic Planetarium & Space Lab",
+            category = "Space Wonder",
+            level = 0,
+            baseCost = 60000.0,
+            costMultiplier = 1.22,
+            baseRevenuePerSec = 2200.0,
+            baseRespectPerSec = 160.0,
+            basePowerPerSec = 120.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Astra the Star Cadet",
+            managerCost = 200000.0,
+            iconName = "memory",
+            description = "Telescopes, glowing shooting stars, and interactive rocket ship flight simulators!"
+        ),
+        BusinessEntity(
+            id = "penthouse_casino",
+            name = "Wonderland Ferris Wheel & Carousel",
+            category = "Theme Park Rides",
+            level = 0,
+            baseCost = 350000.0,
+            costMultiplier = 1.25,
+            baseRevenuePerSec = 9500.0,
+            baseRespectPerSec = 600.0,
+            basePowerPerSec = 400.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Mayor Barnaby Bear",
+            managerCost = 1200000.0,
+            iconName = "casino",
+            description = "A giant glowing Ferris wheel and golden horses carousel overlooking the whole kingdom!"
+        ),
+        BusinessEntity(
+            id = "harbor_cargo",
+            name = "Grand Balloon Skyport & Sea Explorer",
+            category = "Air & Sea Tour",
+            level = 0,
+            baseCost = 2000000.0,
+            costMultiplier = 1.28,
+            baseRevenuePerSec = 42000.0,
+            baseRespectPerSec = 2500.0,
+            basePowerPerSec = 1800.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Captain Sunny & Parrot",
+            managerCost = 6500000.0,
+            iconName = "directions_boat",
+            description = "Hot air balloon safaris and cheerful dolphin sightseeing boats on the sparkling bay."
+        ),
+        BusinessEntity(
+            id = "corporate_tower",
+            name = "Mega Magic Theme Park Palace",
+            category = "Apex Wonder Palace",
+            level = 0,
+            baseCost = 15000000.0,
+            costMultiplier = 1.30,
+            baseRevenuePerSec = 250000.0,
+            baseRespectPerSec = 12000.0,
+            basePowerPerSec = 9000.0,
+            upgradeLevel = 0,
+            isAutomated = false,
+            managerName = "Queen Melody Wonder",
+            managerCost = 45000000.0,
+            iconName = "domain",
+            description = "The ultimate fairytale wonderland palace with nightly fireworks, parades, and joy!"
+        )
+    )
+
+    fun defaultOperatives(): List<OperativeEntity> = listOf(
+        OperativeEntity(
+            id = "marcus_hammer",
+            name = "Sparky the Puppy Hero",
+            alias = "The Speedy Pal",
+            role = "Super Mascot",
+            powerBonus = 120,
+            respectMultiplier = 1.25f,
+            cashMultiplier = 1.10f,
+            costCash = 1200.0,
+            costRespect = 150,
+            isHired = false,
+            level = 1,
+            bio = "A cheerful golden puppy wearing a superhero cape who spreads high-fives and speedy fun!"
+        ),
+        OperativeEntity(
+            id = "elena_whisper",
+            name = "Captain Sparkle",
+            alias = "The Kindness Cheerleader",
+            role = "Friendship Coach",
+            powerBonus = 60,
+            respectMultiplier = 1.50f,
+            cashMultiplier = 1.35f,
+            costCash = 5000.0,
+            costRespect = 600,
+            isHired = false,
+            level = 1,
+            bio = "Master team coordinator who organizes awesome park parties and brings all friends together."
+        ),
+        OperativeEntity(
+            id = "cipher_li",
+            name = "Pixel Princess",
+            alias = "Game Champion",
+            role = "Arcade Master",
+            powerBonus = 180,
+            respectMultiplier = 1.20f,
+            cashMultiplier = 1.50f,
+            costCash = 25000.0,
+            costRespect = 2500,
+            isHired = false,
+            level = 1,
+            bio = "High-score wizard who unlocks super secret rainbow bonus stages across all arcade games."
+        ),
+        OperativeEntity(
+            id = "valeria_serpent",
+            name = "Dino Dash",
+            alias = "The Balloon Dinosaur",
+            role = "Park Explorer",
+            powerBonus = 350,
+            respectMultiplier = 1.40f,
+            cashMultiplier = 1.75f,
+            costCash = 120000.0,
+            costRespect = 8000,
+            isHired = false,
+            level = 1,
+            bio = "A friendly green dinosaur mascot who leads the grand park parade with giant colorful balloons."
+        ),
+        OperativeEntity(
+            id = "damon_godfather",
+            name = "Sunny Panda",
+            alias = "Grand Hug Master",
+            role = "Legendary Guardian",
+            powerBonus = 1200,
+            respectMultiplier = 2.20f,
+            cashMultiplier = 2.00f,
+            costCash = 750000.0,
+            costRespect = 35000,
+            isHired = false,
+            level = 1,
+            bio = "Beloved giant panda master of joy whose warm hugs grant mega star energy and park happiness."
+        )
+    )
+
+    fun defaultDistricts(): List<TurfDistrictEntity> = listOf(
+        TurfDistrictEntity(
+            id = "district_slums",
+            name = "Candy Cloud Meadow",
+            controlledBy = "Player",
+            isPlayerControlled = true,
+            defensePower = 100,
+            revenueMultiplier = 1.10f,
+            respectBonus = 50,
+            difficulty = "Easy",
+            description = "Your starting wonderland zone filled with fluffy cotton candy trees and puppy playgrounds."
+        ),
+        TurfDistrictEntity(
+            id = "district_docks",
+            name = "Splash Water Park",
+            controlledBy = "Giggle Brigade",
+            isPlayerControlled = false,
+            defensePower = 450,
+            revenueMultiplier = 1.25f,
+            respectBonus = 200,
+            difficulty = "Moderate",
+            description = "Mega water slides, lazy rivers, and water balloon splash arenas."
+        ),
+        TurfDistrictEntity(
+            id = "district_downtown",
+            name = "Toy Workshop Plaza",
+            controlledBy = "Choco Bear Champions",
+            isPlayerControlled = false,
+            defensePower = 1400,
+            revenueMultiplier = 1.50f,
+            respectBonus = 800,
+            difficulty = "Hard",
+            description = "A bustling plaza of giant toy building blocks, train sets, and robotic playgrounds."
+        ),
+        TurfDistrictEntity(
+            id = "district_strip",
+            name = "Sparkle Galaxy Zone",
+            controlledBy = "Neon Ninja Buddies",
+            isPlayerControlled = false,
+            defensePower = 3800,
+            revenueMultiplier = 1.80f,
+            respectBonus = 2500,
+            difficulty = "Very Hard",
+            description = "Glowing cosmic rollercoasters, flying saucer rides, and neon star obstacle courses."
+        ),
+        TurfDistrictEntity(
+            id = "district_citadel",
+            name = "Fairytale Magic Castle",
+            controlledBy = "Cosmic Kitty Squad",
+            isPlayerControlled = false,
+            defensePower = 12000,
+            revenueMultiplier = 2.50f,
+            respectBonus = 10000,
+            difficulty = "Supreme",
+            description = "The ultimate fairytale castle surrounded by rainbow fountains and magical fireworks!"
+        )
+    )
+
+    fun defaultRivals(): List<RivalSyndicateEntity> = listOf(
+        RivalSyndicateEntity(
+            id = "rival_viper",
+            name = "The Giggle Brigade",
+            leader = "Barnaby the Jolly Clown",
+            power = 380,
+            respect = 450,
+            bounty = 4500.0,
+            rank = 5,
+            status = "Friendly Match",
+            avatarCrest = "shield",
+            territory = "Splash Water Park",
+            isDeclaredRival = true,
+            sabotageVulnerability = "Water Balloons"
+        ),
+        RivalSyndicateEntity(
+            id = "rival_kuroshio",
+            name = "Choco Bear Champions",
+            leader = "Captain Bruno Bear",
+            power = 1250,
+            respect = 1800,
+            bounty = 18000.0,
+            rank = 4,
+            status = "Playful Rival",
+            avatarCrest = "flash_on",
+            territory = "Toy Workshop Plaza",
+            isDeclaredRival = false,
+            sabotageVulnerability = "Cookie Jars"
+        ),
+        RivalSyndicateEntity(
+            id = "rival_iron",
+            name = "Neon Ninja Buddies",
+            leader = "Shadow Sparky",
+            power = 3400,
+            respect = 5200,
+            bounty = 65000.0,
+            rank = 3,
+            status = "Tag Opponent",
+            avatarCrest = "military_tech",
+            territory = "Sparkle Galaxy Zone",
+            isDeclaredRival = false,
+            sabotageVulnerability = "Obstacle Course"
+        ),
+        RivalSyndicateEntity(
+            id = "rival_apex",
+            name = "Cosmic Kitty Squad",
+            leader = "Princess Fluffy Paws",
+            power = 9800,
+            respect = 18500,
+            bounty = 250000.0,
+            rank = 2,
+            status = "Star Challenge",
+            avatarCrest = "workspace_premium",
+            territory = "Fairytale Magic Castle",
+            isDeclaredRival = false,
+            sabotageVulnerability = "Rainbow Lasers"
+        ),
+        RivalSyndicateEntity(
+            id = "rival_shadow",
+            name = "The Golden Star Champions",
+            leader = "Supreme Sparkle Master",
+            power = 28000,
+            respect = 60000,
+            bounty = 1000000.0,
+            rank = 1,
+            status = "Grand Champion",
+            avatarCrest = "visibility",
+            territory = "Star Galaxy Realm",
+            isDeclaredRival = false,
+            sabotageVulnerability = "Constellation Puzzle"
+        )
+    )
+
+    fun defaultAlliances(): List<AllianceEntity> = listOf(
+        AllianceEntity(
+            id = "alliance_silverline",
+            name = "Sunny Piggy Bank Club",
+            leader = "Oliver the Owl",
+            pactType = "Coin Saving Club",
+            trustScore = 75,
+            dividendPerSec = 45.0,
+            defenseBonus = 180,
+            isAllied = false,
+            avatar = "account_balance",
+            description = "Friendly club of smart savers sharing bonus happy coins and piggy bank rewards.",
+            totalMembers = 18
+        ),
+        AllianceEntity(
+            id = "alliance_ironclad",
+            name = "Super Hero Mascot League",
+            leader = "Captain Leo Lion",
+            pactType = "Mutual Fun Defense",
+            trustScore = 60,
+            dividendPerSec = 25.0,
+            defenseBonus = 450,
+            isAllied = false,
+            avatar = "shield",
+            description = "Team of superhero animal mascots ready to protect the park and cheer everyone up!",
+            totalMembers = 24
+        ),
+        AllianceEntity(
+            id = "alliance_phoenix",
+            name = "Rainbow Balloon Explorers",
+            leader = "Captain Polly Parrot",
+            pactType = "Adventure Fleet",
+            trustScore = 50,
+            dividendPerSec = 85.0,
+            defenseBonus = 120,
+            isAllied = false,
+            avatar = "directions_boat",
+            description = "Air balloon and paddle boat explorers discovering fun new islands and sweet treasures.",
+            totalMembers = 15
+        ),
+        AllianceEntity(
+            id = "alliance_cybernet",
+            name = "Robo-Gamer Innovators",
+            leader = "Beep-Boop the Robot",
+            pactType = "Tech & Games Club",
+            trustScore = 40,
+            dividendPerSec = 120.0,
+            defenseBonus = 250,
+            isAllied = false,
+            avatar = "memory",
+            description = "Creative young inventors designing video games, drone light shows, and robo-pets.",
+            totalMembers = 9
+        )
+    )
+
+    fun defaultJointVentures(): List<JointVentureEntity> = listOf(
+        JointVentureEntity(
+            id = "jv_crypto_bank",
+            allianceId = "alliance_silverline",
+            title = "Mega Piggy Bank Treasure Vault",
+            description = "Build a giant rainbow piggy bank multiplying coins for all club members!",
+            costCash = 25000.0,
+            payoutPerSec = 120.0,
+            respectBonus = 350,
+            powerBonus = 100,
+            isFunded = false
+        ),
+        JointVentureEntity(
+            id = "jv_tactical_depot",
+            allianceId = "alliance_ironclad",
+            title = "Super Hero Treehouse Fort",
+            description = "Build a multi-level treehouse with telescope slides and balloon defense launchers.",
+            costCash = 60000.0,
+            payoutPerSec = 220.0,
+            respectBonus = 750,
+            powerBonus = 600,
+            isFunded = false
+        ),
+        JointVentureEntity(
+            id = "jv_smuggling_fleet",
+            allianceId = "alliance_phoenix",
+            title = "Rainbow Submarine Sea Safari",
+            description = "Launch a yellow glass-bottom submarine to explore coral reefs and playful sea otters.",
+            costCash = 150000.0,
+            payoutPerSec = 680.0,
+            respectBonus = 1800,
+            powerBonus = 400,
+            isFunded = false
+        ),
+        JointVentureEntity(
+            id = "jv_satellite_grid",
+            allianceId = "alliance_cybernet",
+            title = "Shooting Star Laser Show",
+            description = "Launch an orbital light-show beacon casting happy constellations across the sky!",
+            costCash = 500000.0,
+            payoutPerSec = 2400.0,
+            respectBonus = 6000,
+            powerBonus = 2200,
+            isFunded = false
+        )
+    )
+
+    fun defaultReputationContracts(): List<ReputationContractEntity> = listOf(
+        // Super Friendly / Kindness Pacts
+        ReputationContractEntity(
+            id = "rep_charity_gala",
+            title = "Grand Community Toy Donation & Festival",
+            category = "Kindness Deal",
+            requiredRepMin = 15,
+            requiredRepMax = 100,
+            description = "Gift free toys and cookies to every child in the neighborhood to spread pure joy!",
+            rewardCash = 8500.0,
+            rewardRespect = 450,
+            rewardPower = 50,
+            reputationShift = +15
+        ),
+        ReputationContractEntity(
+            id = "rep_peace_accord",
+            title = "Friendship High-Five Treaty",
+            category = "Playground Accord",
+            requiredRepMin = 25,
+            requiredRepMax = 100,
+            description = "Organize a giant ice cream social to bring all rival playground teams into harmony.",
+            rewardCash = 24000.0,
+            rewardRespect = 1200,
+            rewardPower = 150,
+            reputationShift = +20
+        ),
+        ReputationContractEntity(
+            id = "rep_conglomerate_merger",
+            title = "Mega Fairytale Park Grand Opening",
+            category = "Kindness Deal",
+            requiredRepMin = 50,
+            requiredRepMax = 100,
+            description = "Partner with famous cartoon studios to bring beloved characters to your wonderland.",
+            rewardCash = 120000.0,
+            rewardRespect = 5000,
+            rewardPower = 400,
+            reputationShift = +25
+        ),
+
+        // Cheerful / Playful Deals
+        ReputationContractEntity(
+            id = "rep_neutral_arbitration",
+            title = "Cotton Candy & Popcorn Stand Partnership",
+            category = "Playground Accord",
+            requiredRepMin = -20,
+            requiredRepMax = 30,
+            description = "Set up a shared popcorn machine and distribute treats equally to all park visitors.",
+            rewardCash = 15000.0,
+            rewardRespect = 300,
+            rewardPower = 80,
+            reputationShift = +5
+        ),
+
+        // Mischievous / Prankster Ops (Playful mischief instead of gritty crime)
+        ReputationContractEntity(
+            id = "rep_blackmail_council",
+            title = "Secret Silly String Surprise Attack",
+            category = "Silly Prank",
+            requiredRepMin = -100,
+            requiredRepMax = 5,
+            description = "Spray silly string and water guns during the rival park's speech for extra fun points!",
+            rewardCash = 28000.0,
+            rewardRespect = 200,
+            rewardPower = 250,
+            reputationShift = -15
+        ),
+        ReputationContractEntity(
+            id = "rep_shadow_extortion",
+            title = "Giant Tickle Monster Challenge",
+            category = "Playful Challenge",
+            requiredRepMin = -100,
+            requiredRepMax = -10,
+            description = "Challenge rival team champions to a tickle match and win their secret cookie recipes!",
+            rewardCash = 65000.0,
+            rewardRespect = 100,
+            rewardPower = 500,
+            reputationShift = -20
+        ),
+        ReputationContractEntity(
+            id = "rep_arms_cartel_smuggle",
+            title = "Super Pillow Fort Championship",
+            category = "Silly Prank",
+            requiredRepMin = -100,
+            requiredRepMax = -25,
+            description = "Build the world's biggest pillow fort and launch marshmallow cannons at rival team towers.",
+            rewardCash = 250000.0,
+            rewardRespect = 50,
+            rewardPower = 1800,
+            reputationShift = -30
+        )
+    )
+
+    fun defaultLeaderboardEntries(): List<LeaderboardEntryEntity> = listOf(
+        LeaderboardEntryEntity(
+            id = "lb_1",
+            rank = 1,
+            syndicateName = "The Golden Star Champions",
+            leaderName = "Captain Sparkle",
+            power = 185000,
+            respect = 420000,
+            netWorth = 485000000.0,
+            reputationScore = 92,
+            reputationAlignment = "Super Hero Pal",
+            rankTier = "Grand Champion",
+            clan = "Star League",
+            territoriesCount = 5,
+            alliesCount = 8,
+            isPlayer = false,
+            avatar = "workspace_premium"
+        ),
+        LeaderboardEntryEntity(
+            id = "lb_2",
+            rank = 2,
+            syndicateName = "Rainbow Cloud Kingdom",
+            leaderName = "Princess Melody",
+            power = 142000,
+            respect = 310000,
+            netWorth = 290000000.0,
+            reputationScore = 45,
+            reputationAlignment = "Friendly Leader",
+            rankTier = "Diamond Star",
+            clan = "Rainbow Squad",
+            territoriesCount = 4,
+            alliesCount = 6,
+            isPlayer = false,
+            avatar = "shield"
+        ),
+        LeaderboardEntryEntity(
+            id = "lb_3",
+            rank = 3,
+            syndicateName = "Cosmic Kitty Squad",
+            leaderName = "Princess Fluffy Paws",
+            power = 128000,
+            respect = 285000,
+            netWorth = 210000000.0,
+            reputationScore = -88,
+            reputationAlignment = "Silly Prankster King",
+            rankTier = "Diamond Star",
+            clan = "Kitty Clan",
+            territoriesCount = 4,
+            alliesCount = 2,
+            isPlayer = false,
+            avatar = "visibility"
+        ),
+        LeaderboardEntryEntity(
+            id = "lb_4",
+            rank = 4,
+            syndicateName = "Neon Ninja Buddies",
+            leaderName = "Shadow Sparky",
+            power = 94000,
+            respect = 195000,
+            netWorth = 145000000.0,
+            reputationScore = -65,
+            reputationAlignment = "Mischief Ninja",
+            rankTier = "Platinum Hero",
+            clan = "Ninja Squad",
+            territoriesCount = 3,
+            alliesCount = 4,
+            isPlayer = false,
+            avatar = "military_tech"
+        ),
+        LeaderboardEntryEntity(
+            id = "lb_5",
+            rank = 5,
+            syndicateName = "Choco Bear Champions",
+            leaderName = "Captain Bruno Bear",
+            power = 76000,
+            respect = 160000,
+            netWorth = 98000000.0,
+            reputationScore = 15,
+            reputationAlignment = "Cheerful Baker",
+            rankTier = "Platinum Hero",
+            clan = "Bear Cub Club",
+            territoriesCount = 3,
+            alliesCount = 5,
+            isPlayer = false,
+            avatar = "casino"
+        ),
+        LeaderboardEntryEntity(
+            id = "lb_6",
+            rank = 6,
+            syndicateName = "The Giggle Brigade",
+            leaderName = "Barnaby the Clown",
+            power = 48000,
+            respect = 88000,
+            netWorth = 42000000.0,
+            reputationScore = -42,
+            reputationAlignment = "Playful Jester",
+            rankTier = "Gold Buddy",
+            clan = "Giggle Circus",
+            territoriesCount = 2,
+            alliesCount = 3,
+            isPlayer = false,
+            avatar = "flash_on"
+        ),
+        LeaderboardEntryEntity(
+            id = "lb_7",
+            rank = 7,
+            syndicateName = "Wonder Tycoon (You)",
+            leaderName = "Hero Kid",
+            power = 50,
+            respect = 100,
+            netWorth = 500.0,
+            reputationScore = 10,
+            reputationAlignment = "Kind Hero",
+            rankTier = "Junior Hero",
+            clan = "Wonder Squad",
+            territoriesCount = 1,
+            alliesCount = 0,
+            isPlayer = true,
+            avatar = "person"
+        )
+    )
+}
+

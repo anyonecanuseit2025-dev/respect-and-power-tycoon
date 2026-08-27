@@ -1,0 +1,76 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Hero Red Cape behind star -->
+    <path
+        android:pathData="M38,48 L22,78 L42,74 L54,84 L66,74 L86,78 L70,48 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="22"
+                android:startY="48"
+                android:endX="86"
+                android:endY="84"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#F43F5E" />
+                <item android:offset="1.0" android:color="#BE123C" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Cute Golden Smiling Star Body -->
+    <path
+        android:pathData="M54,22 L62,38 L80,40 L66,53 L70,72 L54,62 L38,72 L42,53 L28,40 L46,38 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="28"
+                android:startY="22"
+                android:endX="80"
+                android:endY="72"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFF066" />
+                <item android:offset="0.5" android:color="#FBBF24" />
+                <item android:offset="1.0" android:color="#F59E0B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Mini Golden Star Crown -->
+    <path
+        android:pathData="M48,22 L51,16 L54,20 L57,16 L60,22 Z"
+        android:fillColor="#FDE047" />
+    <!-- Happy Cute Eyes -->
+    <path
+        android:pathData="M48,45m-2.2,0a2.2,2.2 0 1,0 4.4,0a2.2,2.2 0 1,0 -4.4,0"
+        android:fillColor="#261A05" />
+    <path
+        android:pathData="M60,45m-2.2,0a2.2,2.2 0 1,0 4.4,0a2.2,2.2 0 1,0 -4.4,0"
+        android:fillColor="#261A05" />
+    <!-- Eye Sparkles -->
+    <path
+        android:pathData="M47,44m-0.8,0a0.8,0.8 0 1,0 1.6,0a0.8,0.8 0 1,0 -1.6,0"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M59,44m-0.8,0a0.8,0.8 0 1,0 1.6,0a0.8,0.8 0 1,0 -1.6,0"
+        android:fillColor="#FFFFFF" />
+    <!-- Cute Rosy Blush Cheeks -->
+    <path
+        android:pathData="M43,49m-2,0a2,1.2 0 1,0 4,0a2,1.2 0 1,0 -4,0"
+        android:fillColor="#FDA4AF" />
+    <path
+        android:pathData="M65,49m-2,0a2,1.2 0 1,0 4,0a2,1.2 0 1,0 -4,0"
+        android:fillColor="#FDA4AF" />
+    <!-- Cheerful Smile Mouth -->
+    <path
+        android:pathData="M50,50 Q54,55 58,50"
+        android:strokeWidth="1.8"
+        android:strokeColor="#261A05"
+        android:fillColor="#00000000" />
+    <!-- Sparkle Stars around -->
+    <path
+        android:pathData="M78,32 L80,35 L83,36 L80,37 L78,40 L76,37 L73,36 L76,35 Z"
+        android:fillColor="#FFFFFF" />
+    <path
+        android:pathData="M30,32 L32,35 L35,36 L32,37 L30,40 L28,37 L25,36 L28,35 Z"
+        android:fillColor="#FFFFFF" />
+</vector>

@@ -1,0 +1,8 @@
+{
+  "name": "Respect \u0026 Power Tycoon",
+  "description": "Kid-friendly tycoon game! Build your sunny theme park, collect cute hero pals, explore candy zones, and share high-fives in fun party duels!",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
