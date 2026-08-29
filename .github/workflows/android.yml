@@ -16,27 +16,13 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Downloads and configures the exact safe Gradle compiler environment manually
-      - name: Install and Force Gradle 8.7
-        run: |
-          wget -q https://gradle.org
-          sudo unzip -q gradle-8.7-bin.zip -d /opt
-          echo "/opt/gradle-8.7/bin" >> $GITHUB_PATH
-
-      - name: Auto-Locate and Compile APK
+      - name: Compile APK
         run: |
           BUILD_FILE=$(find . -name "build.gradle" -o -name "build.gradle.kts" | head -n 1)
-          if [ -z "$BUILD_FILE" ]; then
-            echo "ERROR: No Gradle project files found."
-            exit 1
-          fi
-          
           PROJECT_DIR=$(dirname "$BUILD_FILE")
-          echo "Target Directory: $PROJECT_DIR"
           cd "$PROJECT_DIR"
-          
-          # Force execution using our newly installed Gradle 8.7 compiler
-          /opt/gradle-8.7/bin/gradle assembleDebug --no-daemon
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxMetaspaceSize=512m"
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
@@ -44,4 +30,3 @@ jobs:
           name: debug-apk
           path: |
             **/build/outputs/apk/debug/*.apk
-            **/build/outputs/apk/**/*.apk
