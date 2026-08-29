@@ -10,15 +10,18 @@ jobs:
       - name: Checkout project source
         uses: actions/checkout@v4
 
+      # Uses Java 17 which is required for AI Studio projects
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # This official step automatically generates the compiler wrapper for AI Studio code
+      # Forces Gradle 8.7 to prevent the KSP Kotlin compiler crash
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.7'
 
       - name: Build Debug APK
         run: gradle assembleDebug
